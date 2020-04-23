@@ -1,0 +1,45 @@
+.k-container {
+	align-self: center;
+	align-content: center;
+	align-items: center;
+	width: 100%;
+	padding-right: 100px;
+	padding-left: 100px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.hoverStyle:hover {
+	/* opacity: 0.8; */
+	color: deeppink;
+}
+
+.row-style {
+	overflow: auto;
+	max-width: 10px;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 12px;
+	height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: rgb(85, 85, 85);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(43, 43, 43);
+}
+
+.k-centre {
+	grid-template-columns: 1fr auto 1fr;
+}

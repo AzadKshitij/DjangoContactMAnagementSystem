@@ -1,0 +1,25 @@
+{% extends 'ContactManagement/base.html' %}
+{% block title %}
+{{ object.name }}
+{% endblock title  %}
+{% block body %}
+<div class="container pt-5">
+  <ul class="list-group">
+    <li class="list-group-item">
+      <h4>Name: <span>{{ object.name }}</span></h4>
+    </li>
+    <li class="list-group-item">
+      <h5>Number: <span>{{object.number}}</span></h5>
+    </li>
+    <li class="list-group-item">
+      <h5>Occupation: <span>{{object.occupation}}</span></h5>
+    </li>
+    <li class="list-group-item">
+      <h6>Date Added: <span>{{object.dateAdded}}</span></h6>
+    </li>
+    <a href="{% url 'user-contact' object.author.username %}" class="list-group-item hoverStyle">
+      <h6>Author: <span>{{object.author}}</span></h6>
+    </a>
+  </ul>
+</div>
+{% endblock body %}
